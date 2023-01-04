@@ -4,10 +4,63 @@
   display: table;
 }
 
+.block {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  border-bottom: solid gray 0.5px;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  max-width: 70%;
+  margin-right: 0;
+}
+
 li {
   float: left;
+  padding-left: 20px;
+  list-style-type: none;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+nav button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin-right: 16px;
+  margin-top: 10px;
+  width: 10%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: solid gray 0.5px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  color: red;
+  margin: 0 20%;
+  padding: 2%;
+  font-size: 150px;
+  overflow-wrap: none;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
