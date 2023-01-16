@@ -1,3 +1,11 @@
+
+@keyframes buttonGallery {
+
+    from{transform: scale(1, 1);}
+    to{transform: scale(3, 3); }
+}
+
+
 .clearfix::after {
 
     content: "";
@@ -47,6 +55,7 @@ nav ul {
     padding: 0;
 }
 
+
 li {
     
     float: left;
@@ -78,6 +87,20 @@ nav button {
 
 }
 
+nav button:hover {
+
+    background-color:rgb(4, 160, 221);
+    border: solid white 0.5px;
+    color: white;
+}
+
+nav button:active {
+
+    background-color:rgb(4, 121, 167);
+    border: solid white 0.5px;
+    color: white;
+}
+
 h1 {
 
     margin: 0 20%;
@@ -103,6 +126,14 @@ p {
     background-color:  rgb(4, 160, 221);
     padding: 25px 40px;
     
+}
+
+
+.gallery_button :hover {
+    
+    animation-name: buttonGallery;
+    animation-duration: 2s;
+
 }
 
 .gallery_button a {
@@ -131,20 +162,50 @@ img {
     object-fit: scale-down;
     margin: auto;
     border-radius: 6%;
+}
 
+h2 {
+
+    color: white;
+    z-index: 3;
+    position: relative;
+    top: 10%;
+    font-size: 50px;
+}
+.badge-twelve {
+	background: black;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	text-align: center;
+    top: 120%;
+    left: 20%;
+    z-index: 0;
 
 }
- h2 {
-
-    position: absolute;
-    top: 110%;
-    left: 20%;
-    background-color: black;
-    color: white;
-    padding: 60px;
-    border-radius: 10%;
-    font-size: 30px;
- }
+.badge-twelve:before, .badge-twelve:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 200px;
+	width: 200px;
+	background: black;
+    z-index: 0;
+}
+.badge-twelve:before {
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+}
+.badge-twelve:after {
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+}
+ 
  .bottom_conteiner {
 
    width: 60%;
