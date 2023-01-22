@@ -1,10 +1,4 @@
 
-@keyframes buttonGallery {
-
-    from{transform: scale(1, 1);}
-    to{transform: scale(3, 3); }
-}
-
 
 .clearfix::after {
 
@@ -31,8 +25,8 @@ body{
 
     background-color: white;
     margin: 8% 2% 2% 2%;
-    border-top-left-radius: 4%;
-    border-top-right-radius: 4%;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
     padding: 20px;
 }
 li, button {
@@ -117,32 +111,33 @@ p {
     margin-left: 4%;
 }
 .gallery_button {
-    height: 100px;
-    padding: 2px 40px;
-    border: solid  rgb(4, 160, 221) 1px;
+    height: 40px;
     border-radius: 10px;
     position: relative;
-    margin-left: 10%;
+    margin-right: 10%;
     background-color:  rgb(4, 160, 221);
-    padding: 25px 40px;
-    
-}
-
-
-.gallery_button :hover {
-    
-    animation-name: buttonGallery;
-    animation-duration: 2s;
-
-}
-
-.gallery_button a {
-
+    width: 20%;
+    float: right;
+    top: 10px;
+    padding: 0.5%;
+    cursor: pointer;
     text-align: center;
     font-size: 25px;
     color: white;
 
+}
 
+
+.gallery_button:hover {
+    opacity: 0.5;
+
+}
+
+.gallery_button:focus {
+
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: 0.5s;
 }
 
 .gallery_text {
@@ -227,11 +222,16 @@ h2 {
     color: white;
     border: solid rgb(4, 160, 221) 1px;
     border-radius: 15%;
+    text-align: center;
+    padding: 5%;
+    font-weight: bold;
+
 
  }
  #gallery p {
 
     font-size: 40px;
+    font-weight: normal;
  }
 
  .sidebar {
