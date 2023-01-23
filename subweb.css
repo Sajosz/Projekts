@@ -45,3 +45,28 @@ form {
   margin: 6%;
   width: 80%;
 }
+
+input {
+  border-radius: 25px;
+  border: none;
+}
+
+input[type=text] {
+  width: 90%;
+  padding: 1%;
+  background-color: #e6e6e6;
+  font-family: Roboto;
+  margin: auto;
+}
+
+input[type=submit] {
+  width: 8%;
+  padding: 0.5%;
+  position: absolute;
+  left: 71%;
+  top: 35.4%;
+  background-color: #04a0dd;
+  color: white;
+  z-index: 3;
+  font-family: Roboto;
+}
